@@ -1,0 +1,14 @@
+/* Optional styles */
+.container {
+  padding: 0 20px;
+}
+.dashboard {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+  padding-top: 20px;
+}
+
+.dashboard-section {
+  background: transparent;
+}

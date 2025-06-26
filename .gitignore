@@ -1,0 +1,10 @@
+# Ignore Node modules
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Ignore env files
+server/.env
+
+# Ignore dist builds
+client/dist/

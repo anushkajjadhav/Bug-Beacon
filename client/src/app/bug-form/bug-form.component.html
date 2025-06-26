@@ -1,0 +1,19 @@
+<h2>Report a Bug</h2>
+<form (ngSubmit)="submitBug()" #bugForm="ngForm">
+  <label>
+    Title:
+    <input type="text" [(ngModel)]="newBug.title" name="title" required />
+  </label>
+  <br />
+  <label>
+    Description:
+    <textarea [(ngModel)]="newBug.description" name="description" required></textarea>
+  </label>
+  <br />
+  <label>
+    Assigned To:
+    <input type="text" [(ngModel)]="newBug.assignedTo" name="assignedTo" />
+  </label>
+  <br />
+  <button type="submit" [disabled]="!bugForm.form.valid">Submit</button>
+</form>

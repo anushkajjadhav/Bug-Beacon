@@ -1,0 +1,20 @@
+<div class="filter-bar">
+  <label for="statusFilter">Filter by Status:</label>
+  <select id="statusFilter" [(ngModel)]="statusFilter">
+    <option value="">All</option>
+    <option value="Open">Open</option>
+    <option value="Resolved">Resolved</option>
+  </select>
+</div>
+
+
+<div *ngFor="let bug of filteredBugs()" class="bug-card">
+  <h3>{{ bug.title }}</h3>
+  <p>{{ bug.description }}</p>
+  <p><strong>Status:</strong> {{ bug.status }}</p>
+  <p><strong>Assigned To:</strong> {{ bug.assignedTo || 'Unassigned' }}</p>
+  <button (click)="markResolved(bug)" [disabled]="bug.status === 'Resolved'">
+    Mark Resolved
+  </button>
+</div>
+

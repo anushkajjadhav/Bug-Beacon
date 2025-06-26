@@ -1,0 +1,17 @@
+
+
+<h1> Real-Time Bug Tracker</h1>
+
+<div class="dashboard">
+  <div class="dashboard-section">
+    <button class="dark-toggle" (click)="toggleDarkMode()">
+    {{ darkMode ? '☀️ Light Mode' : '🌙 Dark Mode' }}
+  </button>
+    <app-bug-form></app-bug-form>
+  </div>
+  <div class="dashboard-section">
+    <app-bug-list></app-bug-list>
+  </div>
+</div>
+
+<div class="overlay"></div>
