@@ -1,4 +1,4 @@
-# Bug Tracker
+# Bug Beacon
 
 A full-stack **Bug Tracking System** built with **Angular**, **Node.js**, **MongoDB**, and **WebSockets**, designed to mimic core features of platforms like Jira — with real-time updates and a clean, modern UI.
 
